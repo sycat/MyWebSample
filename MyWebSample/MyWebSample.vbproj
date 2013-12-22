@@ -84,6 +84,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
+    <Content Include="LockButton.aspx" />
     <Content Include="PreventDoubleSubmit.aspx" />
     <Content Include="UploadImage.aspx" />
     <Content Include="Web.config" />
@@ -105,6 +106,13 @@
     </Compile>
     <Compile Include="Handler1.ashx.vb">
       <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LockButton.aspx.designer.vb">
+      <DependentUpon>LockButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LockButton.aspx.vb">
+      <DependentUpon>LockButton.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
