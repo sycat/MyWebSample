@@ -84,10 +84,16 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
+    <Content Include="ImageContent.aspx" />
+    <Content Include="ImageList.aspx" />
+    <Content Include="ImageUpload.aspx" />
     <Content Include="LockButton.aspx" />
     <Content Include="PreventDoubleSubmit.aspx" />
     <Content Include="UploadImage.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.designer.vb">
@@ -106,6 +112,18 @@
     </Compile>
     <Compile Include="Handler1.ashx.vb">
       <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageContent.aspx.vb">
+      <DependentUpon>ImageContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageList.aspx.vb">
+      <DependentUpon>ImageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageUpload.aspx.vb">
+      <DependentUpon>ImageUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LockButton.aspx.designer.vb">
       <DependentUpon>LockButton.aspx</DependentUpon>
@@ -147,13 +165,43 @@
       <DependentUpon>UploadImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ImageContent.aspx.resx">
+      <DependentUpon>ImageContent.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageList.aspx.resx">
+      <DependentUpon>ImageList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageUpload.aspx.resx">
+      <DependentUpon>ImageUpload.aspx.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebForm1.aspx.resx">
+      <DependentUpon>WebForm1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebForm2.aspx.resx">
+      <DependentUpon>WebForm2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebForm3.aspx.resx">
+      <DependentUpon>WebForm3.aspx.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
